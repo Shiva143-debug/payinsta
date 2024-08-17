@@ -1,38 +1,739 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.main {
+  background-color: #f3f3f3;
+  height: 100%;
+  font-family: 'Roboto';
+
+}
+@media screen and (max-width: 577px) {
+  .main {
+    margin-left: -50px;
+  }
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  border: 1px solid white;
+  top: 29px;
+  left: 119px;
+  padding: 0px 7.5px 2px 206px;
+  background-color: white;
+}
+
+@media screen and (max-width: 577px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    margin-left: -50px;
+    background-color: white;
+  }
+}
+@media screen and (max-width: 577px) {
+  p {
+    font-size: 2px;
+  }
+}
+
+.flex-i {
+  display: flex;
+}
+p {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #262626;
+  padding: 10px;
+}
+.button {
+  color: white;
+  background-color: #f27a44;
+  border: 1px solid #f27a44;
+  border-radius: 16px;
+  width: 127px;
+  width: Hug (127px);
+  height: Hug (51px);
+  padding: 16px 32px 16px 32px;
+  border-radius: 30px;
+  gap: 16px;
+}
+.signup {
+  background-color: #f8f1d340;
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 577px) {
+  .signup {
+    background-color: #f8f1d340;
+    display: flex;
+    flex-direction: column;
+    margin-left: -30px;
+  }
+}
+.m-image {
+  width: 300px;
+  height: 350px;
+  top: 135px;
+  left: 845px;
+  position: absolute; /* Set the overlay image's position to absolute */
+  top: 0; /* Position it at the top of the container */
+  left: 0; /* Position it at the left of the container */
+
+  /* Adjust the opacity as needed */
+  /* Use a different image for the overlay */
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.heading {
+  max-width: 500px;
+  font-size: 32px;
+  font-weight: bold;
+}
+@media screen and (max-width: 577px) {
+  .heading {
+    max-width: 200px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 577px) {
+  .sign-left {
+    margin-left: -30px;
+  }
+}
+.rectangle {
+  position: absolute; /* Set the rectangle's position to absolute */
+  top: 0; /* Position it at the top of the container */
+  left: 0; /* Position it at the left of the container */
+  width: 60%; /* Make the rectangle the same width as the container */
+  height: 30%; /* Make the rectangle the same height as the container */
+  background-color: #be554b; /* Set the background color of the rectangle */
+  border-radius: 24px;
+  opacity: 0.7; /* Adjust the opacity as needed */
+  transform: rotate(155deg);
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.rectangle2 {
+  position: absolute; /* Set the rectangle's position to absolute */
+  top: 0; /* Position it at the top of the container */
+  left: 0; /* Position it at the left of the container */
+  width: 60%; /* Make the rectangle the same width as the container */
+  height: 30%; /* Make the rectangle the same height as the container */
+  background-color: #505c59; /* Set the background color of the rectangle */
+  border-radius: 24px;
+  opacity: 0.7; /* Adjust the opacity as needed */
+  transform: rotate(155deg);
+  margin-top: 150px;
+}
+.rectangular3 {
+  position: absolute; /* Set the rectangle's position to absolute */
+  top: 0; /* Position it at the top of the container */
+  left: 0; /* Position it at the left of the container */
+  width: 200px; /* Make the rectangle the same width as the container */
+  height: 100px; /* Make the rectangle the same height as the container */
+  background-color: #f27a44; /* Set the background color of the rectangle */
+
+  transform: rotate(180deg);
+  margin-top: 150px;
+  margin-left: 200px;
+}
+
+.f-image {
+  position: relative; /* Set the image's position to relative */
+  z-index: 1;
+  width: 300px;
+  height: 350px;
+  top: 135px;
+  left: 845px;
+  /* Set the overlay image's position to absolute */
+  top: 0; /* Position it at the top of the container */
+  left: 0; /* Position it at the left of the container */
+
+  /* Adjust the opacity as needed */
+  /* Use a different image for the overlay */
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.eclipse {
+  position: relative; /* Set the container's position to relative */
+  width: 200px; /* Adjust the width as needed */
+  height: 200px; /* Adjust the height as needed */
+}
+@media screen and (max-width: 768px) {
+  .eclipse {
+    margin-left: 40px;
+    margin-bottom: 200px;
+  }
+}
+.eclipse2 {
+  margin-top: 100px;
+  position: relative; /* Set the container's position to relative */
+  width: 300px; /* Adjust the width as needed */
+  height: 200px; /* Adjust the height as needed */
+}
+@media screen and (max-width: 577px) {
+  .eclipse2 {
+    margin-left: 60px;
+    margin-bottom: 150px;
+  }
+}
+.ci {
+  position: absolute; /* Set the rectangle's position to absolute */
+  top: 0; /* Position it at the top of the container */
+  left: 0; /* Position it at the left of the container */
+  width: 60%; /* Make the rectangle the same width as the container */
+  height: 30%; /* Make the rectangle the same height as the container */
+  background-color: #505c59; /* Set the background color of the rectangle */
+  border-radius: 24px;
+  opacity: 0.7; /* Adjust the opacity as needed */
+  transform: rotate(155deg);
+  margin-top: 150px;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  background-color: yellow; /* Replace with your background image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin-top: 100px;
+}
+.ba {
+  width: 300px;
+  height: 300px;
+  background-color: #87cc81; /* Replace with your background image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin-top: 100px;
+}
+/* .ec2 {
+  width: 541px;
+  height: 541px;
+  top: 331.33935546875px;
+  left: 845px;
+  background-color: #87cc81;
+} */
+/* .eclipse {
+  width: 973.1597290039062px;
+  height: 718.1321411132812px;
+  top: 153.673583984375px;
+  left: 651.8619384765625px;
+} */
+
+h1 {
+  font-family: Poppins;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 100px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.p {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1f2027;
+}
+.p2 {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #505c59;
+  max-width: 350px;
+}
+@media screen and (max-width: 577px) {
+  .p2 {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 577px) {
+  .Topical {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 577px) {
+  .card-set {
+    margin-left: 100px;
+  }
+}
+.button2 {
+  width: Hug (165px);
+  height: Hug (51px);
+  gap: 40px;
+  background-color: #f27a44;
+  width: Hug (165px);
+  height: Hug (51px);
+  padding: 16px 50px 16px 50px;
+  border-radius: 30px;
+  gap: 16px;
+  border: 1px solid #f27a44;
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.sign-left {
+  width: Hug (636px);
+  height: Hug (521px);
+  top: 338px;
+  left: 119px;
+  gap: 50px;
+  margin-left: 100px;
+}
+.card {
+  display: flex;
+  width: 250px;
+  height: 120px;
+  top: 1282px;
+  left: 241px;
+  border-radius: 20px;
+  gap: 10px;
+  border: 1px solid white;
+  border-radius: 8px;
+  box-shadow: 0 3.1255478858947754 5.925629615783691 0;
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.Topical {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+@media screen and (max-width: 577px) {
+  .t-l {
+    margin-left: 50px;
+  }
+}
+.J-info {
+  margin-top: -20px;
+}
+.desti {
+  width: 321px;
+  height: 48px;
+  top: 2013px;
+  left: 119px;
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+@media screen and (max-width: 577px) {
+  .desti {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 577px) {
+  .discount {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.off {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1f2027;
+}
+.avail {
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+@media screen and (max-width: 577px) {
+  .avail {
+    font-size: 22px;
+    margin-left: 15px;
+  }
+}
+.some {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+@media screen and (max-width: 577px) {
+  .some {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+}
+h3 {
+  margin-left: 50px;
+}
+.d-cards {
+  display: flex;
+
+  /* flex-wrap: wrap; */
+}
+@media screen and (max-width: 577px) {
+  .d-cards {
+    display: flex;
+    flex-wrap: wrap;
+
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 577px) {
+  .k-k {
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.info {
+  margin-top: 100px;
+}
+@media screen and (max-width: 577px) {
+  .info {
+    margin-left: 50px;
+  }
+}
+.h2-c {
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+@media screen and (max-width: 577px) {
+  .h2-c {
+    max-width: 250px;
+    margin-left: 20px;
+  }
+}
+.relax {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+@media screen and (max-width: 577px) {
+  .relax {
+    max-width: 300px;
+    margin-left: 10px;
+  }
+}
+.a-d {
+  font-size: 10px;
+}
+.a-name {
+  font-weight: bold;
+  margin-bottom: -20px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.a-image {
+  width: 80px;
+}
+.J-info {
+  padding-top: 10px;
+}
+h2 {
+  font-weight: bold;
+  margin-bottom: -20px;
+}
+h6 {
+  font-size: 14px;
+}
+.form-i {
+  width: 350px;
+  height: 320px;
+  top: 135px;
+  left: 845px;
+  position: absolute; /* Set the overlay image's position to absolute */
+  top: 0; /* Position it at the top of the container */
+  left: 0; /* Position it at the left of the container */
+
+  /* Adjust the opacity as needed */
+  /* Use a different image for the overlay */
+  margin-top: 50px;
+  margin-left: -30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image-form {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 577px) {
+  .image-form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.ca {
+  width: 350px;
+  height: 350px;
+  background-color: gray; /* Replace with your background image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin-top: 50px;
+}
+input {
+  background-color: lightgray;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  width: 100px;
+  padding: 10px;
+  margin: 20px;
+}
+.flex {
+  display: flex;
+}
+@media screen and (max-width: 577px) {
+  .flex {
+    font-size: 2px;
+    margin-left: -100px;
+  }
+}
+.icon {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: -15px;
+  margin-right: -15px;
+  
+}
+.icons {
+  padding: 10px;
+  display: flex;
+  box-sizing: border-box;
+  margin-right: 20px;
+  margin-left: 20px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.icons-r {
+  padding: 10px;
+  display: flex;
+  box-sizing: border-box;
+  margin-left: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.star-input {
+  width: 50px;
+}
+.book {
+  background-color: #000000;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+}
+.form {
+  background-color: white;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  border-radius: 8px;
+  width: 300px;
+}
+@media screen and (max-width: 577px) {
+  .form {
+    width: 280px;
+    margin-left: 100px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+label {
+  padding-left: 20px;
+  font-size: 12px;
+}
+.book-now {
+  font-weight: bold;
+  font-size: 24px;
+  font-family: 'Roboto';
+}
+.form-p {
+  max-width: 300px;
+}
+.city-input {
+  width: 250px;
+}
+@media screen and (max-width: 577px) {
+  .city-input {
+    width: 150px;
+  }
+}
+.test-heading {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 42px;
+}
+hr {
+  width: 40%;
+}
+.test-card {
+  width: 200px;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.test-flex {
+  display: flex;
+  justify-content: space-around;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 768px) {
+  .test-flex {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+}
+.center {
+  text-align: center;
+}
+.s-head {
+  font-family: 'Roboto';
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+@media screen and (max-width: 768px) {
+  .s-head {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+.s-para {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+@media screen and (max-width: 577px) {
+  .s-para {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+}
+/* .s-special {
+  width: Fixed (688px);
+  height: Hug (172px);
+  top: 5159px;
+  left: 378px;
+  gap: 32px;
+} */
+.f-flex {
+  display: flex;
+  font-weight: bold;
+}
+@media screen and (max-width: 577px) {
+  .f-flex {
+    margin-left: 30px;
+  }
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 577px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+/* .vector1 {
+  width: 40px;
+  height: 128px;
+  margin-left: 100px;
+} */
+.circle {
+  margin-left: 950px;
+  margin-top: 100px;
+}
+.vector1 {
+  width: 30px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+@media screen and (max-width: 577px) {
+  .vector1 {
+    width: 30px;
+    margin-left: 60px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 577px) {
+  .circle {
+    margin-left: 400px;
+    margin-top: 50px;
+  }
+}
+.vector2 {
+  width: 30px;
+  height: 128px;
+  margin-left: -20px;
+  margin-bottom: -60px;
+}
+@media screen and (max-width: 577px) {
+  .vector2 {
+    margin-left: 20px;
+    width: 20px;
+  }
+}
+@media screen and (max-width: 577px) {
+  .l-vector {
+    width: 30px;
   }
 }
